@@ -1,0 +1,42 @@
+html, body,li,nav{
+
+    margin: 0;
+    padding: 0;
+    
+    
+}
+
+
+div , img {
+
+    display: inline-block;
+    
+    color: black;
+   
+    font-size: 150%;
+}
+
+
+img {
+
+    margin-right: 1000px;
+
+}
+
+li{
+    display: inline;
+    justify-content: space-between;
+    font-size: 150%;
+    margin-inline: 20px;
+   
+}
+
+
+.selected {
+
+    text-decoration: underline;
+}
+
+.selected:hover {
+background-color: rgb(89, 80, 255);
+}
