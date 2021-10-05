@@ -1,42 +1,218 @@
-html, body,li,nav{
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
 
+
+html, body {
     margin: 0;
     padding: 0;
-    
-    
+    height: 100%;
+    width: 100%;
+} 
+
+h1,ul,h2  {
+    margin: 0;
+    padding: 0;
 }
 
 
-div , img {
+.navigation {
 
-    display: inline-block;
-    
-    color: black;
-   
-    font-size: 150%;
+display: flex;
+justify-content: space-around;
+justify-items: center;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+
+
+background: hsla(0,0%,100%,.98);
+transition: box-shadow .25s ease 0s;
 }
 
-
-img {
-
-    margin-right: 1000px;
-
-}
-
-li{
-    display: inline;
+.left-nav {
+    display: flex;
     justify-content: space-between;
-    font-size: 150%;
-    margin-inline: 20px;
-   
+    justify-items: center;
+    
+}
+
+.fas.fa-star-of-life {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 45px;
+    margin-top: 4px;
+    color: #00C3A5;
+    margin-right: 45px;
+    margin: 2px 5px 0 0;
+    
+}
+
+.fas.fa-star-of-life h1 {
+    margin: 0 0 0 20px;
+    font-family: "work sans";
+    font-weight: bolder;
+}
+ 
+.fas.fa-star-of-life span {
+color: #ABABAB;
+font-family: "work sans";
+font-weight: bolder;
+}
+
+.right-nav {
+    margin: 35px 0 0 68px;
 }
 
 
-.selected {
+.right-nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    list-style: none;
+}
 
+
+
+.right-nav ul li {
+    margin-right: 30px;
+    font-size: 21px;
+    font-family: "work sans";
+    font-weight: 800;
+    color: #ABABAB;
+}
+
+.right-nav ul li.color {
+    color: #00C3A5;
+}
+
+/* main Center */
+.fas.fa-star-of-life.logo-center {
+    margin: 75px 0 50px 980px;
+    font-size: 60px;
+}
+
+h1.text {
+    font-family: 'Raleway', sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+    color:#00C3A5 ;
+    margin-left: 460px;
+    margin-bottom: 85px;
+    word-spacing: 2px;
+}
+
+
+div.lorem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 20px 0 20px;
+}
+
+ div.lorem p {
+    width:36%;
+    margin-right: 38px;
+    font-family: Roboto,Arial,sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 1.75;
+    color: #74747D;
+    display: block;
+    margin-bottom: 120px;
+}
+/* Cards */
+
+.cards {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 50px 10px 0 ;
+    -webkit-font-smoothing: antialiased;
+}
+
+.card1 {
+    display: flex;
+    flex-direction: column;   
+    justify-items: center;
+    height: 520px;
+    width: 460px;
+    margin: 30px 4px 10px 30px ;
+    border-radius: 15px;
+    background-color: #00C3A5;
+    color: white;
+
+}
+
+.card2 {
+
+    display: flex;
+    flex-direction: column;   
+    justify-items: center;
+    height: 520px;
+    width: 460px;
+    margin: 30px 4px 10px 30px ;
+    border-radius: 15px;
+    background-color: #3D83DF;
+    color: white;
+}
+
+
+.card3{
+    display: flex;
+    flex-direction: column;   
+    justify-items: center;
+    height: 520px;
+    width: 460px;
+    margin: 30px 4px 10px 30px ;
+    border-radius: 15px;
+    background-color: #1B2734;
+    color: white; 
+
+}
+
+.card-content {
+height: 100%;
+width: 100%;
+margin: 40px 30px 30px 40px;
+
+
+}
+
+i.fal.fa-users, i.far.fa-user-md, i.far.fa-hospital {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.text-card h2 {
+    margin-top: 27px;
+    margin-bottom: 70px;
+    height:20% ;
+    width: 78%;
+    font-size: 38px;
+    font-weight: 300;
+    line-height: 1.2;
+
+}
+
+select {
+    background: transparent;
+    border: none;
+    color: white;
     text-decoration: underline;
+    margin-top: 10px;
+    font-size: 28px;
+    font-weight: 500;
+    border-style: none;
 }
 
-.selected:hover {
-background-color: rgb(89, 80, 255);
+option {
+    color: black; 
+    font-size: 22px;
 }
+/* End Cards */
+
+
